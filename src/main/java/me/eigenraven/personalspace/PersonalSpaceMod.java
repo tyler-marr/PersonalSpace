@@ -138,6 +138,7 @@ public class PersonalSpaceMod {
 
         MinecraftForge.EVENT_BUS.register(this);
         FMLCommonHandler.instance().bus().register(this);
+        MinecraftForge.TERRAIN_GEN_BUS.register(new me.eigenraven.personalspace.world.TreeDecorationBlocker());
     }
 
     @Optional.Method(modid = "appliedenergistics2-core")
